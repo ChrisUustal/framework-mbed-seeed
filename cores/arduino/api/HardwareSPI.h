@@ -53,7 +53,7 @@ class SPISettings {
   }
 
   // Default speed set to 4MHz, SPI mode set to MODE 0 and Bit order set to MSB first.
-  SPISettings() { init_AlwaysInline(4000000, MSBFIRST, SPI_MODE0); }
+  SPISettings() { init_AlwaysInline(2000000, MSBFIRST, SPI_MODE3); }
 
   bool operator==(const SPISettings& rhs) const
   {
